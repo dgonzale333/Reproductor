@@ -11,23 +11,25 @@
   <div class="container-player">
     <h1>Play Music</h1>        
     <div class="container-album">
-      <img src="album.webp" alt="album" class="player__img">
-      <h2 class="player__artist">Death Grips</h2>
-      <h3 class="player__song">Lost Boys</h3>
+      <img src="src/img/diridiri.jpg" alt="album" class="player__img" id="imgSong">
+      <h2 class="player__artist" id="nameArtist">Ñengo Flow</h2>
+      <h3 class="player__song" id="nameSong">Diri Diri</h3>
     </div>    
     <div class="controls">
       <audio class="player__audio" controls id="audio">
-        <source src="Death Grips - Lost Boys.mp3" type="audio/mpeg">
+        <source src="audio/Diri Diri - Ñengo Flow (youtube).mp3" id="song" type="audio/mpeg">
       </audio>
       <div class="player_controls">
+        <i class='bx bx-skip-next bx-rotate-180 ' id="skip1" ></i>
         <i class='bx bx-rewind' id="rewind"></i>        
         <i class='bx bx-play' id="play"></i>
-        <i class='bx bx-stop' id="stop"></i> 
         <i class='bx bx-pause' id="pause"></i>
         <i class='bx bx-fast-forward' id="forward"></i> 
+        <i class='bx bx-skip-next' id="skip2"></i>
       </div>
     </div>
   </div>
-  <script src="app.js"></script>                    
+  <script type="module" src="src/js/playlist.js"></script> 
+  <script type="module" src="src/js/app.js"></script>                    
 </body>
 </html>
