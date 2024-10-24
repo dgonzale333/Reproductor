@@ -23,11 +23,11 @@ let currentSong = 0;
 function skipSong() {
     const loadSong = playList[currentSong];
 
-    document.getElementById('imgSong').src = loadSong.img
-    document.getElementById('nameArtist').textContent = loadSong.title
-    document.getElementById('nameSong').textContent = loadSong.artist
-    audio.src = loadSong.song
-    audio.load()
+    document.getElementById('imgSong').src = loadSong.img;
+    document.getElementById('nameArtist').textContent = loadSong.artist; // Corregido
+    document.getElementById('nameSong').textContent = loadSong.title;   // Corregido
+    audio.src = loadSong.song;
+    audio.load();
 }
 
 skipSong();
@@ -47,5 +47,6 @@ audio.addEventListener('ended', () => {
     currentSong = (currentSong + 1) % playList.length;
     skipSong();
 });
+
 
 
